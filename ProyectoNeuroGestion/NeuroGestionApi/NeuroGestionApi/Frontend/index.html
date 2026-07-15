@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroGestion Atacama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenido Profesor al Sistema NeuroGestion</h1>
+    <p>Sistema de gestión neuropsicológica en arquitectura de 3 capas.Esta es la capa de Frontend.</p>
+    <!-- Formulario para tus pruebas de proyecto -->
+    <div style="margin-top: 20px;">
+        <button onclick="reservarCita()">Reservar Hora</button>
+        //<p id="mensaje-error" style="color: red; font-weight: bold;"></p>
+        <p id="RUT inválido" style="color: red; font-weight: bold;"></p>
+    </div>
+
+    <script>
+        function reservarCita() {
+            //Con eta instrucción se conecta con la API encendida
+            document.getElementById("mensaje-error").innerText = "RUT inválido";
+            //document.getElementById("mensaje-error").innerText = "Probando CP02: El bloque ya está ocupado.";
+            //document.getElementById("RUT inválido").innerText = "Probando CP02: El bloque ya está ocupado.";
+        }</script>
+</body>
+</html>
+
